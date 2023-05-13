@@ -55,6 +55,8 @@ body {
 .ajuste {
     display: flex;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: 1em;
     }
@@ -112,3 +114,5 @@ body {
 [cor="rosa"] {color: rgb(255, 15, 115);}
   
 [cor="preto"] {color: black;}
+
+
