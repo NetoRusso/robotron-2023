@@ -1,0 +1,359 @@
+@import url(../css/reset.css);
+@import url(../css/navbar.css);
+
+
+:root {
+    --main-cinza: #CCCCCC;
+    --main-branco: #FFFFFF;
+    --main-preto: #000000;
+    --degrade-preto: rgba(5, 5, 5, 0.5 );
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body, input {
+    font-family: 'Teko', sans-serif;
+}
+
+body{
+    background: url(../img/fundo2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-weight: 300;
+}
+
+/* Box é uma classe geral*/
+.box {
+    background: var(--degrade-preto);
+    clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 
+        30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
+    border-left: 0.2em solid var(--main-cinza);
+    height: auto;
+    width: 300px;
+    position: relative;
+}
+
+.robotron{
+    position: relative;
+    background: url(../img/estrutura.png) no-repeat;
+    background-position: center;
+    z-index: -3;
+}
+
+.robo {
+    min-width: 288px;
+    width: 100%;
+    height: auto;
+
+}
+
+.titulo {
+    transform: rotate(180deg);
+    font-weight: 500;
+    font-size: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 0.8;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: rgba(255,255,255,0.8);
+    z-index: -2;
+    
+}
+
+.ajuste {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.pintura {
+    margin-top: 30px;
+}
+
+.cor__titulo {
+    font-size: 32px;
+    color: var(--main-branco);
+    text-transform: uppercase;
+    background-color: var(--degrade-preto);
+    text-align: center;
+    padding-top: 0.1em;
+    clip-path: polygon(calc(100% - 1em) 0, 100% 1em, 100% calc(100% - 1em),
+     calc(100% - 1em) 100%, 1em 100%, 0 calc(100% - 1em), 0 1em, 1em 0);
+}
+
+.cor {
+    margin-top: 10px;
+    background-color: var(--degrade-preto);
+    width: 300px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(calc(100% - 1px) 0, 100% 1em, 100% calc(100% - 1em),
+     calc(100% - 1em) 100%, 1em 100%, 0 calc(100% - 1px), 0 1em, 1em 0);
+     border-left: 0.2em solid var(--main-cinza);
+}
+
+.cor__robo {
+    width: 40px;
+    height: 35px;
+}
+
+.cor__robo:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.estatisticas {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.estatistica {
+    margin: 10px 0;
+    color: var(--main-branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.estatistica-titulo {
+    font-size: 24px;
+    border-bottom: 1px solid var(--main-cinza);
+    flex-basis: 40%;
+    align-items: center;
+    text-transform: uppercase;
+    order: 1
+}
+
+.estatistica-valor {
+    flex-basis: 30%;
+    position: relative;
+    text-align: center;
+    order: 2;
+}
+
+.estatistica-valor::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    border: 0.1em solid var(--main-cinza);
+    border-radius: 50%;
+}
+
+.estatistica-numero {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-46%);
+    width: 100%;
+    line-height: 100%;
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+}
+.estatistica:nth-child(2n) .estatistica-titulo {
+    order: 2;
+    text-align: right;
+}
+
+.estatistica:nth-child(2n) .estatistica-valor {
+    order: 1;
+    margin: 10px 0 0;
+}
+
+.equipamentos {
+
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.montador {
+    height: auto;
+}
+
+.montador-conteudo {
+
+    padding: 2em 10%;
+}
+
+.peca {
+    height: 50px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.peca-titulo {
+    color: var(--main-branco);
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.controle {
+    background: var(--main-preto);
+    border-radius: 2em;
+    float: right;
+    display: inline-flex;
+    padding: 0.3em;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.controle-contador {
+    width: 1.4em;
+    height: 1em;
+    background: none;
+    border: 0;
+    color: var(--main-branco);
+    text-align: center;
+    font-size: 32px;
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.controle-ajuste {
+    display: inline-block;
+    width: 0.7em;
+    height: 0.7em;
+    line-height: 0.8em;
+    border-radius: 50%;
+    color: var(--main-cinza);
+    font-size: 4em;
+    background: var(--main-preto);
+    text-align: center;
+    border: 3px solid var(--main-cinza);
+    cursor: pointer;
+}
+
+.linha {
+    border-color: var(--main-cinza);
+}
+
+.producao {
+    margin: 20px 0;
+    font-size: 32px;
+    text-transform: uppercase;
+    padding: 0.2em 1em;
+    float: right;
+    border: 0.1em solid var(--main-branco);
+    background: var(--main-branco);
+    clip-path: polygon(100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 0);
+    cursor: pointer;
+}
+
+.producao:hover {
+    background: var(--main-preto);
+    color: var(--main-branco)
+}
+
+@media screen and (min-width : 700px) {
+    
+   .robotron{
+    background-position: left;
+    background-size: 500px;
+   }
+
+   .robo {
+     min-width: 400px;
+     max-width: 600px;
+   }
+
+   .titulo { 
+    font-size: 6em;
+   }
+   .estatisticas, .pintura, .montador {
+    width: 70%;
+   }
+
+   .cor__titulo {
+    font-size: 4em;
+   }
+
+   .cor {
+    width: 100%;
+    height: auto;
+   }
+
+   .cor__robo {
+    margin: 10px 0;
+    width: 16%;
+    height: 90%;
+   }
+   .montador-conteudo {
+    width: 100%;
+   }
+
+   .estatistica-titulo, .peca-titulo {
+    font-size: 3em;
+   }
+
+   .controle-contador {
+      margin: 0 1rem;
+   } 
+}
+
+@media screen and (min-width: 1200px) {
+
+    main {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .robo {
+       height: 110%;
+       max-width: auto;
+       width: auto;
+    }
+    
+    .titulo {
+        font-size: 8em;
+    }
+
+     .box {
+        width: 450px;
+        height: 500px;
+    } 
+
+    .ajuste{
+        flex-direction: column;
+        flex-basis: 0%;
+    }
+
+    .estatisticas {
+        margin: 0;
+    }
+
+
+    .estatistica-valor {
+        flex-basis: 20%;
+    }
+
+    .pintura {
+        margin-top: 12px;
+        width: 450px;
+    }
+
+    .equipamentos {
+        margin: 0;
+        margin-left: 12px;
+        justify-content: flex-start;
+    }
+
+    .peca {
+        margin: 20px 0;
+    }
+
+    
+}
