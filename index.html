@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
+    <title>Robotron 2023</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">         
+            <div class="menu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>         
+        </label>
+        <ul class="lista__menu">
+            <li class="lista__menu__item"><a class="lista__menu__link" href="./index.html">Robotron 2000</a></li>
+            <li class="lista__menu__item"><a class="lista__menu__link" href="./Consolidando o seu conhecimento/01_JavaScript_para_Web/ex01.html">01- JS para Web</a></li>
+            <li class="lista__menu__item"><a class="lista__menu__link" href="./Consolidando o seu conhecimento/02_Interagindo_Com_Uma_Pagina/ex02.html">02- Interagindo com a página</a></li>
+            <li class="lista__menu__item"><a class="lista__menu__link" href="./Consolidando o seu conhecimento/03_Montando_Uma_Peca/ex03.html">03- Manipulando um Array</a></li>
+            <li class="lista__menu__item"><a class="lista__menu__link" href="./Consolidando o seu conhecimento/04_Montando_um_robo/ex04.html">04- Balde de tinta</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="robotron">
+                <img class="robo" src="img/Robotron 2000 - Branco/robotron.png" alt="Robotron" id="robotron">
+                <figcaption class="titulo">ROBOTRON <br>2023</figcaption>
+        </section>
+        <div class="ajuste">            
+                <section class="box estatisticas">
+                    <div class="estatistica direita">
+                        <p class="estatistica-titulo">Força</p>
+                        <div class="estatistica-valor">
+                            <p class="estatistica-numero" data-estatistica="forca">0</p>
+                        </div>
+                    </div>
+                    <div class="estatistica esquerda">
+                        <p class="estatistica-titulo">Poder</p>
+                        <div class="estatistica-valor">
+                            <p class="estatistica-numero" data-estatistica="poder">0</p>
+                        </div>
+                    </div>
+                    <div class="estatistica direita">
+                        <p class="estatistica-titulo">Energia</p>
+                        <div class="estatistica-valor">
+                            <p class="estatistica-numero" data-estatistica="energia">0</p>
+                        </div>
+                    </div>
+                    <div class="estatistica esquerda">
+                        <p class="estatistica-titulo">Velocidade</p>
+                        <div class="estatistica-valor">
+                            <p class="estatistica-numero" data-estatistica="velocidade">0</p>
+                        </div>
+                    </div>
+                </section>
+                <div class="pintura">
+                        <h2 class="cor__titulo">Pintura</h2>
+                        <div class="cor">
+                            <img cor= "branco" class="cor__robo" src="img/Robotron 2000 - Branco/robotron.png" alt="Mini robotron na cor branco">
+                            <img cor= "amarelo" class="cor__robo" src="img/Robotron 2000 - Amarelo/robotron.png" alt="Mini robotron na cor amarelo">
+                            <img cor= "azul" class="cor__robo" src="img/Robotron 2000 - Azul/robotron.png" alt="Mini robotron na cor azul">
+                            <img cor= "preto" class="cor__robo" src="img/Robotron 2000 - Preto/robotron.png" alt="Mini robotron na cor preto">
+                            <img cor= "rosa" class="cor__robo" src="img/Robotron 2000 - Rosa/robotron.png" alt="Mini robotron na cor Rosa">
+                            <img cor= "vermelho" class="cor__robo" src="img/Robotron 2000 - Vermelho/robotron.png" alt="Mini robotron na cor Vermelho">
+                    </div>
+                </div>
+        </div>
+        <section class="equipamentos">
+                <form action="" class="montador">
+                    <div class="box montador-conteudo">
+                        <div class="peca">
+                            <label for="" class="peca-titulo">Braços</label>
+                            <div class="controle">
+                                <buttom class="controle-ajuste" data-controle="-" data-peca="bracos">-</buttom>
+                                <input type="text" class="controle-contador" data-contador value="00" >
+                                <buttom class="controle-ajuste" data-controle="+" data-peca="bracos">+</buttom>
+                            </div>
+                        </div>
+                        <hr class="linha">
+                        <div class="peca">
+                            <label for="" class="peca-titulo">Blindagem</label>
+                            <div class="controle">
+                                <buttom class="controle-ajuste" data-controle="-" data-peca="blindagem">-</buttom>
+                                <input type="text" class="controle-contador" data-contador value="00">
+                                <buttom class="controle-ajuste" data-controle="+" data-peca="blindagem">+</buttom>
+                            </div>
+                        </div>
+                        <hr class="linha">
+                        <div class="peca">
+                            <label for="" class="peca-titulo">Núcleos</label>
+                            <div class="controle">
+                                <buttom class="controle-ajuste" data-controle="-" data-peca="nucleos">-</buttom>
+                                <input type="text" class="controle-contador" data-contador value="00">
+                                <buttom class="controle-ajuste" data-controle="+" data-peca="nucleos">+</buttom>
+                            </div>
+                        </div>
+                        <hr class="linha">
+                        <div class="peca">
+                            <label for="" class="peca-titulo">Pernas</label>
+                            <div class="controle">
+                                <buttom class="controle-ajuste" data-controle="-" data-peca="pernas">-</buttom>
+                                <input type="text" class="controle-contador" data-contador value="00">
+                                <buttom class="controle-ajuste" data-controle="+" data-peca="pernas">+</buttom>
+                            </div>
+                        </div>
+                        <hr class="linha">
+                        <div class="peca">
+                            <label for="" class="peca-titulo">Foguetes</label>
+                            <div class="controle">
+                                <buttom class="controle-ajuste" data-controle="-" data-peca="foguetes">-</buttom>
+                                <input type="text" class="controle-contador" data-contador value="00">
+                                <buttom class="controle-ajuste" data-controle="+" data-peca="foguetes">+</buttom>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Resetar" class="producao" id="producao">
+                </form>            
+        </section>      
+    </main>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
