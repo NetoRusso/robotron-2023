@@ -1,0 +1,17 @@
+const lista = ['Laranja', 'Vermelho', 'Branco', 'Amarelo', 'Rosa'];
+
+
+    lista.splice(0,1); // sai o 'Laranja' índice 0
+    console.log(lista) // retorna ['Vermelho', 'Branco', 'Amarelo', 'Rosa']
+    
+    lista.splice(1,1);  // sai o 'Vermelho' índice 1
+    console.log(lista) // retorna ['Laranja', 'Branco', 'Amarelo', 'Rosa']
+    
+    lista.splice(2,1);  // sai o  'Branco' índice 2
+    console.log(lista) // retorna ['Laranja', 'Vermelho', 'Amarelo', 'Rosa']
+    
+    lista.splice(3,1);  // sai o  'Amarelo' índice 3
+    console.log(lista) // retorna ['Laranja', 'Vermelho', 'Branco', 'Rosa']
+    
+    lista.splice(4,1);  // sai o  'Rosa' índice 4
+    console.log(lista) // retorna ['Laranja', 'Vermelho', 'Branco', 'Amarelo']

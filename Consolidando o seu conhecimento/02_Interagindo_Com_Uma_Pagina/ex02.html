@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8">
+  <title>Manipulando o DOM - Aula 2</title>
+  <link rel="stylesheet" href="./ex02Style.css">
+</head>
+<body>
+  <header>
+    <input type="checkbox" id="menu" class="container__botao">
+        <label for="menu" class="container__rotulo">         
+        <div class="menu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>         
+    </label>
+    <ul class="lista__menu">
+        <li class="lista__menu__item"><a class="lista__menu__link" href="../../index.html">Robotron 2000</a></li>
+        <li class="lista__menu__item"><a class="lista__menu__link" href="../01_JavaScript_para_Web/ex01.html">01- JS para Web</a></li>
+        <li class="lista__menu__item"><a class="lista__menu__link" href="../02_Interagindo_Com_Uma_Pagina/ex02.html">02- Interagindo com a página</a></li>
+        <li class="lista__menu__item"><a class="lista__menu__link" href="../03_Montando_Uma_Peca/ex03.html">03- Manipulando um Array</a></li>
+        <li class="lista__menu__item"><a class="lista__menu__link" href="../04_Montando_um_robo/ex04.html">04- Balde de tinta</a></li>
+    </ul>
+</header>
+
+  <div class="container">
+
+    <h1 class="page-title" id="titulo">
+      Manipulando elementos no DOM</h1>
+
+      <button id="calcular">Fui Clicado ?</button>
+
+      <h1 class="resultado"></h1>
+
+      <h2 class="resultado"></h2>
+
+  </div>
+
+  <script src="./ex02Script.js"></script>
+</body>
+</html>

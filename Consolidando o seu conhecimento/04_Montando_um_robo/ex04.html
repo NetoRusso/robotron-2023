@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balde de Tinta</title>
+
+    <link rel="stylesheet" href="ex04Style.css">
+
+</head>
+<body>
+
+    <header>
+        <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">         
+            <div class="menu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>         
+        </label>
+        <ul class="lista__menu">
+            <li class="lista__menu__item"><a class="lista__menu__link" href="../../index.html">Robotron 2000</a></li>
+            <li class="lista__menu__item"><a class="lista__menu__link" href="../01_JavaScript_para_Web/ex01.html">01- JS para Web</a></li>
+            <li class="lista__menu__item"><a class="lista__menu__link" href="../02_Interagindo_Com_Uma_Pagina/ex02.html">02- Interagindo com a página</a></li>
+            <li class="lista__menu__item"><a class="lista__menu__link" href="../03_Montando_Uma_Peca/ex03.html">03- Manipulando um Array</a></li>
+            <li class="lista__menu__item"><a class="lista__menu__link" href="../04_Montando_um_robo/ex04.html">04- Balde de tinta</a></li>
+        </ul>
+    </header>
+
+    
+
+    <section class="corpo">
+        <!-- <button onclick="mostraTintas(this)">Aluratintas em estoque:</button> -->
+        <h1 class="titulo">Estoque de tintas:</h1>
+        <div class="ajuste">
+            <div class="clicas">
+                <button class="clica" id="tinta__exterior">Tintas para exteriores</button>
+                <button class="clica" id="tinta__interior">Tintas para interiores</button>
+                <button class="clica" id="tinta__toda">Todas as tintas <img class="img__b" src="./yes.svg"></button>
+                <button class="clica" id="tinta__zera">Zerar as tintas <img class="img__b" src="./no.svg"></button>
+            </div>
+            <ul id="lista">
+                <li cor="laranja" tipo="exterior" class="item">Tinta laranja</li>
+                <li cor="vermelho" tipo="interior"  class="item">Tinta vermelha</li>
+                <li cor="branco" tipo="interior"  class="item">Tinta branca</li>
+                <li cor="amarelo" tipo="exterior"  class="item">Tinta amarelo</li>
+                <li cor="rosa" tipo="exterior"  class="item">Tinta rosa</li>
+            </div>
+        </ul>
+    </section>
+    
+<script src="./ex04Script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8">
+  <title>Manipulando o DOM - Aula 1</title>
+  <link rel="stylesheet" href="./ex01Style.css">
+</head>
+<body>
+  <header>
+    <input type="checkbox" id="menu" class="container__botao">
+        <label for="menu" class="container__rotulo">         
+        <div class="menu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>         
+    </label>
+    <ul class="lista__menu">
+        <li class="lista__menu__item"><a class="lista__menu__link" href="../../index.html">Robotron 2000</a></li>
+        <li class="lista__menu__item"><a class="lista__menu__link" href="../01_JavaScript_para_Web/ex01.html">01- JS para Web</a></li>
+        <li class="lista__menu__item"><a class="lista__menu__link" href="../02_Interagindo_Com_Uma_Pagina/ex02.html">02- Interagindo com a página</a></li>
+        <li class="lista__menu__item"><a class="lista__menu__link" href="../03_Montando_Uma_Peca/ex03.html">03- Manipulando um Array</a></li>
+        <li class="lista__menu__item"><a class="lista__menu__link" href="../04_Montando_um_robo/ex04.html">04- Balde de tinta</a></li>
+    </ul>
+</header>
+<!-- fonte  --> 
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+<!-- fonte  -->
+
+<div class="teste"></div>
+<section class="container">
+<div class="trono"></div>
+<p id="texto">O inverno está chegando</p>
+</section>
+<div class = "frase">
+    <input type="text" class="frase_entrada" id="frase_entrada" placeholder="Frase favorita do GOT" >
+    <button class="frase_button" id="frase_button" >Mudar</button>
+</div>
+<script src="ex01Script.js"></script>
+</body>
+</html>

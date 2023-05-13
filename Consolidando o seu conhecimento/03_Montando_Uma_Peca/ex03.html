@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montando uma Peça</title>
+    <link rel="stylesheet" href="ex03Style.css">
+
+</head>
+<body>
+
+    <header>
+        <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">         
+            <div class="menu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>         
+        </label>
+        <ul class="lista__menu">
+            <li class="lista__menu__item"><a class="lista__menu__link" href="../../index.html">Robotron 2000</a></li>
+            <li class="lista__menu__item"><a class="lista__menu__link" href="../01_JavaScript_para_Web/ex01.html">01- JS para Web</a></li>
+            <li class="lista__menu__item"><a class="lista__menu__link" href="../02_Interagindo_Com_Uma_Pagina/ex02.html">02- Interagindo com a página</a></li>
+            <li class="lista__menu__item"><a class="lista__menu__link" href="../03_Montando_Uma_Peca/ex03.html">03- Manipulando um Array</a></li>
+            <li class="lista__menu__item"><a class="lista__menu__link" href="../04_Montando_um_robo/ex04.html">04- Balde de tinta</a></li>
+        </ul>
+    </header>
+
+    <div class="corpo">
+        <div>
+        <h2 class="chamada">Click a baixo no qual você quer eliminar!</h2>
+        </div>
+        <ul class="lista">
+            <li class="lista__item" id="laranja">Laranja</li>
+            <li class="lista__item" id="vermelho">Vermelho</li>
+            <li class="lista__item" id="branco">Branco</li>
+            <li class="lista__item" id="amarelo">Amarelo</li>
+            <li class="lista__item" id="rosa">Rosa</li>
+        </ul>
+
+        <div class="resposta">
+            <code class="texto"> <span class="ac">lista</span> = 
+                <span class='am'>[</span><span id="texto__lista">'Laranja', 'Vermelho', 
+                    'Branco', 'Amarelo', 'Rosa'</span><span class='am'>]</span>; </code>
+            
+            <code class="texto__2"></code>
+            
+            <img class="reset" src="/Consolidando o seu conhecimento/03_Montando_Uma_Peca/reset.svg" alt="imagem reset">
+        </div>
+    </div>
+    <script src="ex03Script.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+@import url(../../css/navbar.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    }
+  
+body {
+   
+    background-size: 80vh;
+    background-image: url(./tintas.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-size: 24px;
+    }
+
+.corpo  {
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+    min-height: 400px;
+    min-width: 450px;
+    display: flex;
+    color: white;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+    }
+
+.titulo {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0 2em;
+    border-bottom: dashed #fff;
+    border-radius: 30%;
+    margin-bottom: 1em;
+    }
+
+#lista  {
+    list-style: none;
+    background-color:  rgba(0, 0, 0, 0.9);
+    padding: 2em;
+    border: dashed #fff;
+    border-radius: 15%;
+    }
+
+    .item:hover {
+        scale:1.2;
+        cursor: pointer;
+        }
+
+.ajuste {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1em;
+    }
+
+.clicas {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+.clica {
+    padding: 1em;
+    border: #fff solid 0.2em;
+    font-weight: bold;
+    border-radius: 5%;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .clica:hover {
+    color: white;
+    background-color: rgba(150, 150, 150, 0.9);
+    scale: 1.2;
+    cursor: pointer;
+    }
+
+#tinta__toda, #tinta__zera{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img__b {
+    width: 1.5em;
+}
+
+.lista {
+    padding: 20px;
+    list-style-type: none;
+    border: 4mm ridge rgba(234, 122, 11, 0.992);
+    }
+
+
+[data-data = 'vai']{
+    visibility: hidden;
+}
+  
+[cor="laranja"] {color: orange;}
+  
+[cor="vermelho"] {color: red;}
+  
+[cor="branco"] {color: white;}
+  
+[cor="amarelo"] {color: yellow;}
+  
+[cor="rosa"] {color: rgb(255, 15, 115);}
+  
+[cor="preto"] {color: black;}

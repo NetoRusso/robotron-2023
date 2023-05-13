@@ -1,0 +1,87 @@
+@import url(../../css/navbar.css);
+
+body {
+    background-color: black;
+    
+}
+.corpo{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+}
+
+.chamada {
+    margin-top: 10em;
+    color: #fff;
+
+}
+
+.lista {
+    margin-top: 2em;
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+
+.lista__item {
+    border: double 0.2em #fff;
+    border-radius: 25%;
+    padding: 1em;
+    margin: 2em;
+    text-decoration: none;
+    box-shadow: 3px 3px 3px 3px rgba(255, 255, 255, 1);
+}
+
+.lista__item:hover{
+    scale: 1.2;
+    rotate: 5deg;
+    cursor: pointer;
+    box-shadow: none;
+
+}
+
+#laranja{background-color: rgba(255, 149, 0, 0.9);}
+#vermelho{background-color: rgba(255, 3, 3, 0.9);}
+#branco{background-color: rgba(255, 255, 255, 0.5);}
+#amarelo{background-color: rgba(255, 238, 0, 0.8);}
+#rosa{background-color: rgba(255, 0, 208, 0.9);}
+
+code {
+    display: block;
+    /* background-color: #1E1E1E; */
+    color: #FFFFFF;
+    font-family: Consolas, monospace;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .ae{color: aqua;} .ac{color:greenyellow} .am{color: gold;} .rz{color: rgb(255, 0, 208)}
+  .la{color: rgb(255, 149, 0)} .rd{color: red} 
+  .selected {
+    visibility: hidden;
+  }
+
+  .reset {
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    border: solid #fff;
+    border-radius: 50%;
+    padding: 0.5em;
+    background: rgb(43, 43, 43);
+  }
+
+  .reset:hover {
+    rotate: -120deg;
+    scale: 1.2;
+    cursor: pointer;
+  }
+  
